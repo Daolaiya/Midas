@@ -19,9 +19,8 @@ router.post("/", ensureLoggedIn, async function (req, res, next) {
             throw new BadRequestError(errs);
         }
         const media = await Media.createFromMediaId(req.body.media_id);
-        // console.log("MEDIA: ", media);
         const favorite = await Favorite.create(req.body.username, req.body.media_id);
-        // console.log("FAVORITE: ", favorite);
+
         // Returns - id, username, media_id
         return res.status(201).json({favorite});
     } catch (err) {

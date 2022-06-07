@@ -26,12 +26,10 @@ function MediaBrief({id="tt4154756", image, title="Avengers Infintiy War", descr
             setCurrentUser(modifiedUser);
             MidasApi.removeFavorite({username: currentUser.username, media_id:id});
         } else {
-            console.log("NOT LIKED. CURRENT USER:", currentUser)
             let modifiedUser = currentUser;
             let arr = currentUser.favoriteMediaIds
             arr.push(id);
             modifiedUser.favoriteMediaIds = arr;
-            console.log("MODIFIED USER: ", modifiedUser);
             setCurrentUser(modifiedUser);
             MidasApi.createFavorite({username: currentUser.username, media_id:id});
         }

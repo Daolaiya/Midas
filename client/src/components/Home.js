@@ -21,7 +21,6 @@ function Home() {
 
         if (formValue.trim() !== ""){
             let result = await axios.get(`${BASE_URL}/${formValue}`);
-            console.log("API RESULT: ", result);
             let allResults = result.data.results;
             let validResults = allResults.filter((item) => item.image !== noImage);
             setMediaBrief(validResults);

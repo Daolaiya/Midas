@@ -34,7 +34,8 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "client/build")));
 }
 
-app.use(express.static(path.join(__dirname, "client/build")));
+// app.use(express.static(path.join(__dirname, "client/build")));
+// console.log("PATH: ", path, "PATH JOIN: ", path.join(__dirname, "client/build"));
 
 app.get("/test", test, async function (req, res, next) {
     console.log("REQUEST BODY: ", req.body);

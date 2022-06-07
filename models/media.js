@@ -26,12 +26,9 @@ class Media {
         const duplicateCheck = await db.query(`SELECT * FROM media WHERE id = $1`, [id]);
         if (duplicateCheck.rows[0]) return;
         const apiResult = await axios.get(`${BASE_URL}/${id}`);
-        // console.log("APIRESULT: ", apiResult.data.actorList);
         const title = apiResult.data.title;
         const type = apiResult.data.type === "Movie" ? "movie" : "show";
-        // console.log("ACTORS:", apiResult.data);
         const cast_list = apiResult.data.actorList.map((item) => item.name).join(", ");
-        // console.log("CASTLIST: ", cast_list);
         const description = apiResult.data.plot;
         const result = await db.query(
             `INSERT INTO media (id, title, type, cast_list, description)
