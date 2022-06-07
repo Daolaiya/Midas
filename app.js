@@ -13,6 +13,8 @@ const favoritesRoutes = require("./routes/favoritesRoutes");
 const authRoutes = require("./routes/authRoutes");
 const imdbRoutes = require("./routes/imdbRoutes");
 
+const path = require("path");
+
 const app = express();
 
 app.use(cors());
@@ -25,6 +27,14 @@ app.use("/media", mediaRoutes);
 app.use("/users", usersRoutes);
 app.use("/favorites", favoritesRoutes);
 app.use("/imdb", imdbRoutes);
+
+if (process.env.NODE_ENV === "production") {
+    //server static content
+    //npm run build
+    app.use(express.static(path.join(__dirname, "client/build")));
+}
+
+app.use(express.static(path.join(__dirname, "client/build")));
 
 app.get("/test", test, async function (req, res, next) {
     console.log("REQUEST BODY: ", req.body);
