@@ -1,0 +1,16 @@
+.website-title-div {
+    text-align: center;
+}
+
+.navigation-div {
+  right: 0px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* .logo, .website-title {
+    display: inline-block;
+} */
