@@ -8,7 +8,6 @@ class MidasApi {
     static token;
 
     static async request(endpoint, data = {}, method = "get") {
-        console.log("BASE_URL: ", BASE_URL);
         console.debug("API Call:", endpoint, data, method);
         const url = `${BASE_URL}/${endpoint}`;
         const headers = {Authorization: `Bearer ${MidasApi.token}`};

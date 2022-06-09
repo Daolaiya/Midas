@@ -5,7 +5,6 @@ import CountContext from "../countContext";
 function LogOut(){
     const {setToken, setCurrentUser} = useContext(CountContext);
 
-
     useEffect(() => {
         setToken(null);
         setCurrentUser(null);
