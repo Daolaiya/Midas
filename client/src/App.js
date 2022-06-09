@@ -34,6 +34,8 @@ function App() {
 
         if (token) {
             getCurrentUser();
+        } else {
+            setCurrentUser(null);
         }
     }, [token]);
 

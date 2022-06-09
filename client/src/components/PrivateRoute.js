@@ -8,7 +8,7 @@ function PrivateRoute({exact, path, children}) {
     console.debug("PrivateRoute", "exact=", exact, "path=", path, "currentUser=", currentUser);
 
     if (!currentUser) {
-            return <Redirect to="/login"/>;
+        return <Redirect to="/login"/>;
     }
 
     return (

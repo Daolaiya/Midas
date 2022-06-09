@@ -9,6 +9,8 @@ function LogOut(){
     useEffect(() => {
         setToken(null);
         history.push("/");
+        // window.location.href = "/";
+
     }, [setToken]);
 
 
