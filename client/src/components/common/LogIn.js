@@ -1,7 +1,7 @@
 import React, {useState, useContext} from "react";
 import {useHistory } from "react-router-dom";
-import MidasApi from "../api";
-import CountContext from "../countContext";
+import MidasApi from "../../api";
+import CountContext from "../../countContext";
 import Alert from "./Alert";
 
 function LogIn(){

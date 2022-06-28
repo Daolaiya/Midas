@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from "react";
 import {Redirect} from "react-router-dom";
-import CountContext from "../countContext";
+import CountContext from "../../countContext";
 
 function LogOut(){
     const {setToken, setCurrentUser} = useContext(CountContext);
@@ -8,8 +8,7 @@ function LogOut(){
     useEffect(() => {
         setToken(null);
         setCurrentUser(null);
-
-    }, [setToken]);
+    }, [setToken, setCurrentUser]);
 
     return <Redirect to="/"/>;
 }

@@ -1,9 +1,9 @@
 import React, {useContext} from "react";
 import {NavLink} from "react-router-dom";
 
-import CountContext from "../countContext";
+import CountContext from "../../countContext";
 
-import "../css/Navigation.css";
+import "../../css/Navigation.css";
 
 function Navigation() {
     const {currentUser} = useContext(CountContext);

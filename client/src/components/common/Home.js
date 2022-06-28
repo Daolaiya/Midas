@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import axios from "axios";
 
-import MediaBrief from "./MediaBrief";
-import "../css/Home.css"
+import MediaBrief from "../Media/MediaBrief";
+import "../../css/Home.css"
 
 const BASE_URL = "https://imdb-api.com/en/API/Search/k_cecld4h6";
 const noImage = "https://imdb-api.com/images/original/nopicture.jpg";

@@ -3,12 +3,12 @@ import React from "react";
 
 import PrivateRoute from "./PrivateRoute";
 import Home from "./Home";
-import Profile from "./Profile";
+import Profile from "../Users/Profile";
 import LogIn from "./LogIn";
-import Register from "./Register";
-import User from "./User";
+import Register from "../Users/Register";
+import User from "../Users/User";
 import LogOut from "./LogOut";
-import Favorites from "./Favorites";
+import Favorites from "../Favorites/Favorites";
 
 function Routes(){
     return (

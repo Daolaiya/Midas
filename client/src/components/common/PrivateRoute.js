@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Route, Redirect } from "react-router-dom";
-import CountContext from "../countContext";
+import CountContext from "../../countContext";
 
 function PrivateRoute({exact, path, children}) {
     const {currentUser} = useContext(CountContext);

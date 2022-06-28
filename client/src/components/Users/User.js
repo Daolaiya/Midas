@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext } from 'react';
 import {useHistory} from 'react-router-dom';
 
-import Back from './Back';
-import CountContext from '../countContext';
+import Back from '../Navigation/Back';
+import CountContext from '../../countContext';
 
 function User() {
     const history = useHistory();

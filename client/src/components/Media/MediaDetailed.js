@@ -1,7 +1,7 @@
 import React, {useState, useContext} from "react";
 
-import MidasApi from "../api";
-import CountContext from "../countContext";
+import MidasApi from "../../api";
+import CountContext from "../../countContext";
 
 function MediaDetailed({id="tt4154756", title="Avengers Infintiy War", type="movie", cast_list="Robert Downey, Mark Ruffalo, Chris Evans", description="Avengers movie"}) {
     const [favorite, setFavorite] = useState(false);

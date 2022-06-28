@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext } from "react";
-import CountContext from "../countContext";
-import MidasApi from "../api";
+import CountContext from "../../countContext";
+import MidasApi from "../../api";
 
 function MediaBrief({id="tt4154756", image, title="Avengers Infintiy War", description="Avengers movie"}) {
     const {token, currentUser, setCurrentUser} = useContext(CountContext);

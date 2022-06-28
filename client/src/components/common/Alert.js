@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../css/Alert.css"
+import "../../css/Alert.css"
 
 // Presentational component for LoginForm, SignupForm, ProfileForm
 function Alert({type = "danger", messages = [] }) {

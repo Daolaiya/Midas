@@ -1,9 +1,9 @@
 import React, {useContext, useEffect, useState} from "react";
 import {v4 as uuid} from 'uuid';
 
-import MidasApi from "../api";
-import CountContext from "../countContext";
-import MediaDetailed from "./MediaDetailed";
+import MidasApi from "../../api";
+import CountContext from "../../countContext";
+import MediaDetailed from "../Media/MediaDetailed";
 
 function Favorites(){
     const {currentUser, token} = useContext(CountContext);

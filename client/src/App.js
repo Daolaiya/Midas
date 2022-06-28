@@ -4,9 +4,9 @@ import jwt from "jsonwebtoken";
 
 import MidasApi from "./api";
 import CountContext from "./countContext";
-import Routes from "./components/Routes";
-import Navigation from "./components/Navigation";
-import useLocalStorage from "./components/useLocalStorage";
+import Routes from "./components/common/Routes";
+import Navigation from "./components/Navigation/Navigation";
+import useLocalStorage from "./components/common/useLocalStorage";
 import logo from "./Logo.png";
 
 import "./css/App.css";

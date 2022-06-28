@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext } from 'react';
 import {useHistory } from 'react-router-dom';
-import MidasApi from '../api';
-import CountContext from '../countContext';
+import MidasApi from '../../api';
+import CountContext from '../../countContext';
 
 function Profile() {
     const history = useHistory();
